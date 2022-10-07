@@ -6,15 +6,22 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+"deploy": "gh-pages -d build",
+"export":"next export"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
+    "mdb": "^0.1.0",
+    "mdb-react-ui-kit": "^4.2.0",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "eslint": "8.24.0",
-    "eslint-config-next": "12.3.1"
+    "eslint-config-next": "12.3.1",
+    "gh-pages": "^4.0.0"
   }
 }
