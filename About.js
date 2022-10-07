@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../fintract/styles/Home.module.css'
+import styles from '/styles/Home.module.css'
 function About() {
   return (
     <div>

@@ -16,7 +16,7 @@ import {
   MDBCollapse,
 } from 'mdb-react-ui-kit';
 import Image from 'next/image';
-import styles from '../fintract/styles/Home.module.css'
+import styles from '/styles/Home.module.css'
 export default function Nav() {
   const [showBasic, setShowBasic] = useState(false);
 
