@@ -21,6 +21,7 @@ import Best from '../Best';
 import Clients from '../Clients';
 import Sign from '../Sign';
 import Abt from '../Abt';
+import Nav2 from '../Nav2';
 
 
 export default function Home() {

@@ -64,13 +64,22 @@ text-align: center;
   border: 1px solid #8F3BF2;
   border-radius: 30px;
 }
+.ii{
+  position: absolute;
+left: 7.13%;
+right: 7.13%;
+top: 8.01%;
+bottom: 8.01%;
+}
 .login{
   box-sizing: border-box;
-text-align: center;
+text-align: left;
+
   position: absolute;
   width: 173px;
-  height: 60px;
-  left: 10px;
+  height: 45px;
+ 
+  right: 20px;
   top: 7px;
   color: black;
   border: 2px solid #8F3BF2;
@@ -826,6 +835,65 @@ background: url('/fb.png');
 .card h2 {
   margin: 0 0 1rem 0;
   font-size: 1.5rem;
+}
+.lo{
+  position: absolute;
+left: 2.99%;
+right: 91.97%;
+top: 1.37%;
+bottom: 98.21%;
+
+background: #000000;
+border: 1px solid #000000;
+background: url('/finlogo.png');
+}
+.cont{
+  position: absolute;
+width: 106px;
+height: 29px;
+left: 427px;
+top: 39px;
+
+font-family: 'Calibri';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: justify;
+
+color: #0D0D0D;
+}
+.abou1{
+  position: absolute;
+width: 91px;
+height: 29px;
+left: 582px;
+top: 39px;
+
+font-family: 'Calibri';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: justify;
+
+color: #0D0D0D;
+}
+.our{
+  position: absolute;
+width: 129px;
+height: 29px;
+left: 722px;
+top: 39px;
+
+font-family: 'Calibri';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 29px;
+text-align: justify;
+
+color: #0D0D0D;
 }
 
 .card p {

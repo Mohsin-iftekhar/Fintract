@@ -38,8 +38,8 @@ export default function Nav() {
           <MDBIcon icon='bars' fas />
         </MDBNavbarToggler>
 
-        <MDBCollapse navbar show={showBasic}>
-          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+        <MDBCollapse navbar show={showBasic} className='justify-content-center'>
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0 mx-5 justify-content-center'>
             <MDBNavbarItem>
               <MDBNavbarLink active aria-current='page' href='#'>
                 Contact Us
@@ -61,19 +61,36 @@ export default function Nav() {
                 </MDBDropdownMenu>
               </MDBDropdown>
             </MDBNavbarItem>
-
             <MDBNavbarItem>
-              <MDBNavbarLink  href='#' tabIndex={-1} aria-disabled='true'>
-                More
-              </MDBNavbarLink>
-            </MDBNavbarItem>
+            <MDBDropdown>
+              <MDBDropdownToggle tag='a' className='nav-link'>
+              More
+              </MDBDropdownToggle>
+              <MDBDropdownMenu>
+                <MDBDropdownItem link>Action</MDBDropdownItem>
+                <MDBDropdownItem link>Another action</MDBDropdownItem>
+                <MDBDropdownItem link>Something else here</MDBDropdownItem>
+              </MDBDropdownMenu>
+            </MDBDropdown>
+          </MDBNavbarItem>
           </MDBNavbarNav>
           <form className='d-flex input-group w-auto'>
           <MDBBtn outline color='light' className={styles.login}>
-          LogIn
+         <h3>LogIn
+         <Image src="/login.png"
+          // className={styles.ii}
+          height={28}
+          width={28}
+          /></h3>
+         
         </MDBBtn>
-        
+       
           </form>
+          <Image
+          src="/sear.png"
+          height={40}
+          width={40}
+          />
         </MDBCollapse>
       </MDBContainer>
     </MDBNavbar>

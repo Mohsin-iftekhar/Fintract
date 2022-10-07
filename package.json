@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "predeploy": "npm run build",
-"deploy": "gh-pages -d build",
-"export":"next export"
+    "deploy": "gh-pages -d build",
+    "export": "next export"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
