@@ -104,6 +104,11 @@ letter-spacing: 0.1em;
 
 color: #FFFFFF;
 }
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
 .imag{
   width: 22px;
   height: 20px;
@@ -236,7 +241,7 @@ border-radius: 21px;
 }
 .ceoback{
   position: absolute;
-  width: 100%;
+  width: 400%;
   height: 426px;
   left: 0px;
   top: 2320px;
@@ -271,7 +276,7 @@ background: url('../public/ceo.png');
 }
 .clients{
   position: absolute;
-width: 100%;
+width: 200%;
 height: 308px;
 left: 0px;
 top: 3621px;
@@ -579,7 +584,7 @@ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
 }
 .sign{
   position: absolute;
-width: 100%;
+width: 200%;
 height: 481px;
 top: 4057px;
 
@@ -912,6 +917,7 @@ color: #0D0D0D;
     width: 100%;
     flex-direction: column;
   }
+ 
 }
 
 @media (prefers-color-scheme: dark) {
@@ -924,5 +930,32 @@ color: #0D0D0D;
   }
   .logo img {
     filter: invert(1);
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav__menu-bar{
+    display: none;
+  }
+  .nav__menu-list{
+    position: unset;
+    flex-direction: row;
+    min-height: fit-content;
+    width: fit-content;
+    column-gap: 24px;
+    align-items: center;
+  }
+  .nav__link::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 6px;
+    bottom: -16px;
+    left: 0;
+    background-color: black;
+    transition: all 0.2s;
+  }
+  
+  .nav__link:hover:before{
+   width: 100%;
   }
 }
